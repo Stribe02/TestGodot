@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dac068vaiofit"]
+
+[ext_resource type="PackedScene" uid="uid://iqu2qf2rhghx" path="res://TomsScene/RoboPrefab.tscn" id="1_acqyj"]
+
+[node name="roboPrefabCam" type="Node3D"]
+
+[node name="RoboProto0" parent="." instance=ExtResource("1_acqyj")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.0224549, 0.758601, -0.651169, -0.026144, 0.651556, 0.75815, 0.999406, 0, 0.0344634, -6.61611, 6, 0.0511453)

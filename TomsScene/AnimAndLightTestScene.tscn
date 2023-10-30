@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://ca4725eqh8tl4"]
+
+[ext_resource type="PackedScene" uid="uid://dac068vaiofit" path="res://TomsScene/RoboPrefabCam.tscn" id="1_430ek"]
+
+[node name="AnimAndLightTestScene" type="Node3D"]
+
+[node name="RoboPrefabCam" parent="." instance=ExtResource("1_430ek")]
+
+[node name="Env" type="Node" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Env"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.28328, 0)
+size = Vector3(50, 1, 50)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Env"]
+light_energy = 3.379
+light_angular_distance = 31.62
